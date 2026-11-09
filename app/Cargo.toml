@@ -1,0 +1,108 @@
+[package]
+name = "primitive-painter"
+version = "0.9.29"
+edition = "2021"
+description = "Native Windows primitive painting workbench with branching edit history"
+license = "MIT"
+default-run = "primitive-painter"
+autobins = false
+
+[workspace]
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(feature, values("rocm", "aten-hip"))'] }
+
+[features]
+default = ["native-inference"]
+native-inference = []
+cuda = ["native-inference", "candle-core/cuda", "candle-nn/cuda"]
+
+[dependencies]
+eframe = { version = "=0.27.2", default-features = false, features = ["default_fonts", "wgpu"] }
+# Keep Vulkan available and compile Windows DX12/WARP for GPU-less desktops.
+wgpu = { version = "=0.19.4", default-features = false, features = ["dx12"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+candle-core = "=0.11.0"
+candle-nn = "=0.11.0"
+sentencepiece-rs = "=0.2.2"
+rand = "0.9"
+pollster = "0.3"
+bytemuck = { version = "1.25.2", features = ["derive", "min_const_generics"] }
+image = { version = "0.24.9", default-features = false, features = ["png", "jpeg", "bmp", "webp"] }
+sha2 = "0.10.9"
+zip = { version = "8.6.0", default-features = false, features = ["deflate-flate2"] }
+flate2 = { version = "1.1", default-features = false, features = ["rust_backend"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+strip = "debuginfo"
+
+[[bin]]
+name = "primitive-painter"
+path = "src/main.rs"
+
+[[bin]]
+name = "model-probe"
+path = "src/bin/model_probe.rs"
+
+[[bin]]
+name = "aten-weight-index"
+path = "src/bin/aten_weight_index.rs"
+
+[[bin]]
+name = "PrimitivePainter"
+path = "src/unified_entry.rs"
+
+[[bin]]
+name = "acceptance"
+path = "src/bin/acceptance.rs"
+
+[[bin]]
+name = "tree-preview-fixture"
+path = "src/bin/tree_preview_fixture.rs"
+
+[[bin]]
+name = "region-acceptance"
+path = "src/bin/region_acceptance.rs"
+
+[[bin]]
+name = "region-preview-fixture"
+path = "src/bin/region_preview_fixture.rs"
+
+[[bin]]
+name = "parallel-acceptance"
+path = "src/bin/parallel_acceptance.rs"
+
+[[bin]]
+name = "parallel-workflow-acceptance"
+path = "src/bin/parallel_workflow_acceptance.rs"
+
+[[bin]]
+name = "runtime-installer"
+path = "src/bin/runtime_installer.rs"
+
+[[bin]]
+name = "aten-runtime-installer"
+path = "src/bin/aten_runtime_installer.rs"
+
+[[bin]]
+name = "stage-pause-acceptance"
+path = "src/bin/stage_pause_acceptance.rs"
+
+[[bin]]
+name = "kv-int8-acceptance"
+path = "src/bin/kv_int8_acceptance.rs"
+
+[[bin]]
+name = "project-roundtrip"
+path = "src/bin/project_roundtrip.rs"
+test = false
+
+[patch.crates-io]
+# Keep optional kernel compilation out of the Windows PE import table.
+# This local copy changes cudarc linkage only, not Candle's tensor math.
+candle-core = { path = "vendor/candle-core" }

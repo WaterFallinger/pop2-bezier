@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite the project."
+title: "Primitive Operation Painter 2"
+type: software
+authors:
+  - family-names: "wonderfulearth"
+repository-code: "https://github.com/wonderfulearth/primitive-operation-painter"
+url: "https://github.com/wonderfulearth/primitive-operation-painter"
+license: MIT

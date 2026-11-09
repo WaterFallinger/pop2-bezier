@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "runtime_manifest_changed": false,
+  "installed_release_binary_changed": false,
+  "source_built_installer_includes_these_texts": true,
+  "records": [
+    {
+      "file": "amd-comgr-LICENSE.txt",
+      "bytes": 1579,
+      "sha256": "6577add001b44184add253d73d5b9c52931b2eb1643a7a280898793acbd05dc6",
+      "source_distribution": "rocm_sdk_core-0.1.dev0 Windows wheel from the ROCm 7.1.1 official index",
+      "source_entry": "_rocm_sdk_core/share/doc/amd_comgr/LICENSE.txt",
+      "source_url": "https://repo.radeon.com/rocm/windows/rocm-rel-7.1.1/",
+      "scope": "Exact installed wheel documentation text."
+    },
+    {
+      "file": "amd-comgr-NOTICES.txt",
+      "bytes": 1909,
+      "sha256": "1b7b489301a9ed3878b702372d56d211e69bfa8b8830fd8ea480c52b35f020b0",
+      "source_distribution": "rocm_sdk_core-0.1.dev0 Windows wheel from the ROCm 7.1.1 official index",
+      "source_entry": "_rocm_sdk_core/share/doc/amd_comgr/NOTICES.txt",
+      "source_url": "https://repo.radeon.com/rocm/windows/rocm-rel-7.1.1/",
+      "scope": "Exact installed wheel documentation text."
+    },
+    {
+      "file": "hipblas-common-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipblas-common/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "hipblas-LICENSE.txt",
+      "bytes": 3479,
+      "sha256": "fec91d5fe42b9fef3e0d8088e769c113f8dd6eda614b6bc5a646feacb16c88a4",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipblas/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "hipblaslt-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipblaslt/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "hipfft-LICENSE.txt",
+      "bytes": 2799,
+      "sha256": "dc73cef4d65dbb7ef98c9dc1af26edd3528d5d2f6dca59f78d6b5cb6940204bc",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipfft/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "hiprand-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hiprand/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "hipsolver-LICENSE.txt",
+      "bytes": 1090,
+      "sha256": "67db69484a5bb6ec5a2d6e7738f036eb76d2d611fde7b763bab4ff1edfcd5e13",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipsolver/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": false,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "hipsparse-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipsparse/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "OpenBLAS-0.3.30-LICENSE.txt",
+      "bytes": 1548,
+      "sha256": "190b5a9c8d9723fe958ad33916bd7346d96fab3c5ea90832bb02d854f620fcff",
+      "url": "https://raw.githubusercontent.com/OpenMathLib/OpenBLAS/v0.3.30/LICENSE",
+      "source_ref": "v0.3.30",
+      "scope": "Installed rocm-openblas.dll identifies OpenBLAS 0.3.30 NO_AFFINITY generic; this is matching upstream-base text, not proof of exact AMD fork source commit."
+    },
+    {
+      "file": "OpenBLAS-lapack-netlib-LICENSE.txt",
+      "bytes": 2266,
+      "sha256": "978539245c405775bf347b1256c36df4daf8b69a64b099e94b1d53742201621e",
+      "url": "https://raw.githubusercontent.com/OpenMathLib/OpenBLAS/v0.3.30/lapack-netlib/LICENSE",
+      "source_ref": "v0.3.30",
+      "scope": "Installed rocm-openblas.dll identifies OpenBLAS 0.3.30 NO_AFFINITY generic; this is matching upstream-base text, not proof of exact AMD fork source commit."
+    },
+    {
+      "file": "pytorch-LICENSE.txt",
+      "bytes": 518631,
+      "sha256": "1dfd29e52dd6f8e6ff501680038efc9e0b0246f189a2d670faa6ba635003ebc4",
+      "source_distribution": "torch-2.9.0+rocmsdk20251116-cp312-cp312-win_amd64.whl",
+      "source_entry": "torch-2.9.0+rocmsdk20251116.dist-info/licenses/LICENSE",
+      "source_url": "https://repo.radeon.com/rocm/windows/rocm-rel-7.1.1/torch-2.9.0%2Brocmsdk20251116-cp312-cp312-win_amd64.whl",
+      "scope": "Exact installed official wheel LICENSE/NOTICE; includes bundled-component notices."
+    },
+    {
+      "file": "pytorch-NOTICE.txt",
+      "bytes": 24088,
+      "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+      "source_distribution": "torch-2.9.0+rocmsdk20251116-cp312-cp312-win_amd64.whl",
+      "source_entry": "torch-2.9.0+rocmsdk20251116.dist-info/licenses/NOTICE",
+      "source_url": "https://repo.radeon.com/rocm/windows/rocm-rel-7.1.1/torch-2.9.0%2Brocmsdk20251116-cp312-cp312-win_amd64.whl",
+      "scope": "Exact installed official wheel LICENSE/NOTICE; includes bundled-component notices."
+    },
+    {
+      "file": "rocblas-LICENSE.txt",
+      "bytes": 9200,
+      "sha256": "b57f384b03b348ca6dc3694dafa3ed7e69003a910fcd9e402eca514f4d86af83",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocblas/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": false,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "rocfft-LICENSE.txt",
+      "bytes": 2800,
+      "sha256": "bff8e2d1d03f313c95f39be2aa1fbdb545baa170bd07b077172539f1114afd0b",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocfft/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "ROCm-clr-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/clr/rocm-7.1.1/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "scope": "Official source license for this ROCm tag; not a complete binary dependency notice audit."
+    },
+    {
+      "file": "ROCm-HIP-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/hip/rocm-7.1.1/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "scope": "Official source license for this ROCm tag; not a complete binary dependency notice audit."
+    },
+    {
+      "file": "ROCm-MIOpen-LICENSE.txt",
+      "bytes": 4844,
+      "sha256": "f64af72ceda1fcee344f64d9dc7ebb0d3d46963d41ce2b82353858e4b59c4606",
+      "url": "https://raw.githubusercontent.com/ROCm/MIOpen/rocm-7.1.1/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "scope": "Official source license for this ROCm tag; not a complete binary dependency notice audit."
+    },
+    {
+      "file": "rocrand-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocrand/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "rocsolver-LICENSE.txt",
+      "bytes": 5128,
+      "sha256": "a037bdde286c83bb33b905fbabe2aa4187553b7abe41ae281aa1b2dab89ef95a",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocsolver/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": false,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    },
+    {
+      "file": "rocsparse-LICENSE.txt",
+      "bytes": 1080,
+      "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocsparse/LICENSE.md",
+      "source_ref": "rocm-7.1.1",
+      "matches_companion_sdk_license": true,
+      "scope": "Official source project license; exact binary dependency audit remains separate."
+    }
+  ],
+  "remaining_review": [
+    "Exact source commit and any AMD-specific modifications for rocm-openblas.dll (binary identifies upstream OpenBLAS 0.3.30, base-source licenses provided).",
+    "The rocm-sdk-core and rocm-sdk-libraries-custom 0.1.dev0 wheel metadata contains no License or License-File fields; confirm vendor package redistribution terms and all transitive binary notices for the exact wheel artifacts.",
+    "Confirm source/binary notice coverage of compiled AOTriton images, liblzma/libomp and MIOpen dependency code against the consolidated exact PyTorch LICENSE/NOTICE and official ROCm source texts.",
+    "Microsoft VC CRT redistributables must come from the licensed developer-supplied redist folder; retain its applicable vendor terms separately."
+  ]
+}

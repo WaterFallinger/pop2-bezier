@@ -1,0 +1,12 @@
+{
+  "csv_header": "image_name,cx,cy,w,h,shape_type,theta,r,g,b,is_region_marker,stage,region_id",
+  "format": "geometrize_512_three_stage_interrupt_v1",
+  "max_total_records": 896,
+  "mode": "mixed",
+  "part_size_bytes": 1073741824,
+  "resume_seed_dir": null,
+  "seed": 20261105,
+  "shader_constants": "ShaderConstants { canvas_width: 512, canvas_height: 512, shape_alpha: 0.5, penalty_factor: 1.8, max_search_attempts: 2000, max_history_records: 895, phase_two_random_step_min: 85, phase_two_random_step_max: 85, max_aspect_ratio: 8.0, region_similarity_threshold: 0.95, grid_min_successful_shapes: 0, grid_max_successful_shapes: 20, initial_candidate_count: 50, survivor_count: 5, mutation_stagnation_limit: 100, max_mutations_per_survivor: 10000, position_mutation_range: 56.0, width_mutation_range: 56.0, height_mutation_range: 56.0, angle_mutation_range_degrees: 16.0, min_half_size: 1.0, max_half_size: 256.0, mutation_weights: [1, 1, 1, 1, 1] }",
+  "storage_layout": "large_csv_v1",
+  "versions": 1
+}

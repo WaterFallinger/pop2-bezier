@@ -1,0 +1,11 @@
+{
+  "name": "cudaforge",
+  "version": "0.1.6",
+  "declared_spdx": "MIT OR Apache-2.0",
+  "provided_license_text": "Apache-2.0",
+  "basis": "Published crate Cargo.toml license field; no separate upstream license file at recorded commit. Cudaforge permits MIT OR Apache-2.0; this copy supplies the Apache-2.0 option.",
+  "canonical_text_source": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/Apache-2.0.txt",
+  "canonical_text_sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+  "upstream_repository": "https://github.com/guoqingbao/cudaforge",
+  "upstream_commit": "903f226b64b737a23610df361ec6371aaebdfd0d"
+}

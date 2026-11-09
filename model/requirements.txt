@@ -1,0 +1,8 @@
+# Install a hardware-appropriate recent PyTorch build first; see README tested versions.
+# Full production training and optional torch.compile require a supported GPU stack.
+numpy>=1.26
+pandas>=2.2,<3
+sentencepiece==0.2.2
+Pillow>=10
+matplotlib>=3.8
+filelock>=3.13

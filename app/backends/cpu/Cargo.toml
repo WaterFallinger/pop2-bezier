@@ -1,0 +1,50 @@
+[package]
+name = "primitive-painter-cpu"
+version = "0.9.29"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[features]
+default = ["native-inference"]
+native-inference = []
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(feature, values("cuda", "rocm", "aten-hip"))'] }
+
+[dependencies]
+eframe = { version = "=0.27.2", default-features = false, features = ["default_fonts", "wgpu"] }
+# Keep Vulkan available and compile Windows DX12/WARP for GPU-less desktops.
+wgpu = { version = "=0.19.4", default-features = false, features = ["dx12"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+candle-core = { version = "=0.11.0", default-features = false }
+candle-nn = { version = "=0.11.0", default-features = false }
+sentencepiece-rs = "=0.2.2"
+rand = "0.9"
+pollster = "0.3"
+bytemuck = { version = "1.25.2", features = ["derive", "min_const_generics"] }
+image = { version = "0.24.9", default-features = false, features = ["png", "jpeg", "bmp", "webp"] }
+sha2 = "0.10.9"
+zip = { version = "8.6.0", default-features = false, features = ["deflate-flate2"] }
+flate2 = { version = "1.1", default-features = false, features = ["rust_backend"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+strip = "debuginfo"
+
+[[bin]]
+name = "primitive-painter-cpu"
+path = "../../src/main.rs"
+
+[[bin]]
+name = "project-roundtrip"
+path = "../../src/bin/project_roundtrip.rs"
+test = false
+
+[patch.crates-io]
+candle-core = { path = "../../vendor/candle-core" }

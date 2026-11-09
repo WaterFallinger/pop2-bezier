@@ -1,0 +1,9 @@
+# App source candidate and installer attachment
+
+The [PrimitivePainter-0.9.29-Setup.exe](https://github.com/wonderfulearth/primitive-operation-painter/releases/download/pop2-1b/PrimitivePainter-0.9.29-Setup.exe) release attachment is the existing tested Windows installer. It is distributed separately from the Git source. This particular 0.9.29 installer was verified on the development NVIDIA PC and in clean Windows Sandbox CPU/WARP and finite CUDA generation acceptance. The application line also has earlier physical RX 7900 XTX Windows validation; that must not be reported as a new physical-AMD test of this exact attachment. Per-release hardware evidence remains with the maintainer; this package does not include private machine logs.
+
+The `app/` tree is a cleaned open-source candidate based on application 0.9.29. The production model computation and drawing behavior are retained. Curation changes include portable build paths, relocation of the production AMD bridge out of an experimental directory, explicit dependency/tool inputs, removal of developer default locations, corrected public CLI scaffolding and bundled license notices.
+
+The existing Setup has not been rebuilt from these cleaned source files. It therefore must not be described as a byte-for-byte build of this exact candidate. To release a source-corresponding new binary, follow `app/installer/README.md`, build all matching workers and the AMD bridge, and include the third-party material. The parameters `-AdditionalLicenseDirectory ../third_party` and explicit NSIS/VC redist inputs are available for that packaging step.
+
+The candidate's CPU application tests, registered CLI targets, build entry checks and installer syntax have been validated. A full new NVIDIA/AMD binary build from the cleaned candidate, and the AMD C++ bridge build on a matching developer SDK, are separate checks and have not been substituted with the historical installer's successful runtime tests.

@@ -1,0 +1,6 @@
+{
+  "component": "NVIDIA CUDA 13.1 local SDK redistribution terms",
+  "text_source": "Official CUDA Toolkit 13.1 EULA supplied with installed NVIDIA toolkit",
+  "runtime_packages": "See app/installer/runtime-manifest.json; exact runtime selections may have additional packaged notices",
+  "sha256": "c8acca4db5b97135ce5cfcffb807e8f6231293f5d54436151413d6536082b12d"
+}

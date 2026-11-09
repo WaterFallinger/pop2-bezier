@@ -1,0 +1,40 @@
+{
+  "model_generation": "POP 2 / internal v3.3",
+  "production_training_snapshot": "Archived formal A800 trainer through Epoch60 extension; configurable final epoch",
+  "released_checkpoint": "doubixz/primitive-operation-painter-2-1b, Epoch60/global_step10020",
+  "unchanged_training_math_modules": [
+    "model_gpt.py",
+    "block_state.py",
+    "fused_multilane.py",
+    "gpu_master_adamw.py",
+    "token_layout.py",
+    "checkpoint_compat.py"
+  ],
+  "portable_changes": {
+    "config.py": "Project-relative paths; public entry defaults single/eager; CLI chooses DDP/world size and GPU FP32 master explicitly",
+    "caption_data.py": "Any positive image count and uniform variant count, preserving exact tokenizer/dropout/selection equations",
+    "dataset_gpt_full_sequence.py": "Reject overlong complete groups instead of silent clipping; all protocol checks retained",
+    "train_gpt_pretrain.py": "Explicit model-only initialization versus true optimizer resume; explicit random start; configurable epochs; cloud ACK retention opt-in, default completed epochs retained; rank initialization parallelism defaults to one and can be increased with POP_INITIALIZATION_PARALLELISM; low-space message matches existing16GiB threshold; explicit cuda:0 for single-device warmup; replace private one-off rank migration guard with generic saved batch/world-size alignment, refusing absent micro-batch metadata",
+    "reference_visualize.py": "Formal merged Python sampler/renderer; default alpha4; no machine archive search; missing weights fail; direct legacy bulk driver disabled",
+    "train.py": "Public local/single/DDP wrapper, not the private WAN streaming deployment",
+    "prepare_data.py": "Creates public selection/caption sidecars from user sequence manifests and explicit prompts/no-text choice",
+    "infer.py": "Bounded three-stage inference, optional global prefix and eager logit CFG; full editing/context-overclocking remain native App features; construct self-trained compatible architecture from strict metadata, including tiny checkpoints",
+    "cfg.py": "Previously validated conditional/empty-text logit guidance implementation",
+    "training_control.py": "Explicit --control-dir and project-relative default; cooperative request/status protocol retained"
+  },
+  "excluded": [
+    "original training images and prompts",
+    "optimizer states and model weight binaries",
+    "WAN upload/archive coordinators and credentials",
+    "loss-forensics/Adam-reset/LR experiments",
+    "benchmark outputs and deployment logs"
+  ],
+  "validation": {
+    "cpu_protocol_tests": 9,
+    "full_1b_model_constructed": false,
+    "weight_metadata_shape_checked": true,
+    "actual_generator_csv_to_caption_and_mmap_loader": "passed",
+    "real_tiny_gpu_cli": "630850 parameters: two epochs + exact Adam/global_step resume to third, separate model-only reinitialization, eight-record inference CLI"
+  },
+  "full_gpu_training_retested_for_packaging": false
+}

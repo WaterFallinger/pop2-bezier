@@ -1,0 +1,11 @@
+{
+  "name": "hexf-parse",
+  "version": "0.2.1",
+  "declared_spdx": "CC0-1.0",
+  "provided_license_text": "CC0-1.0",
+  "basis": "Published crate Cargo.toml license field; no separate upstream license file at recorded commit. Cudaforge permits MIT OR Apache-2.0; this copy supplies the Apache-2.0 option.",
+  "canonical_text_source": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/CC0-1.0.txt",
+  "canonical_text_sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+  "upstream_repository": "https://github.com/lifthrasiir/hexf",
+  "upstream_commit": "4225763d744183d720f575ae96d04161b4d08ea0"
+}

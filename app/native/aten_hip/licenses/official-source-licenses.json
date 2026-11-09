@@ -1,0 +1,150 @@
+[
+  {
+    "file": "ROCm-clr-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/clr/rocm-7.1.1/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "scope": "Official source license for this ROCm tag; not a complete binary dependency notice audit."
+  },
+  {
+    "file": "ROCm-HIP-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/hip/rocm-7.1.1/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "scope": "Official source license for this ROCm tag; not a complete binary dependency notice audit."
+  },
+  {
+    "file": "ROCm-MIOpen-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/MIOpen/rocm-7.1.1/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "f64af72ceda1fcee344f64d9dc7ebb0d3d46963d41ce2b82353858e4b59c4606",
+    "bytes": 4844,
+    "scope": "Official source license for this ROCm tag; not a complete binary dependency notice audit."
+  },
+  {
+    "file": "hipblas-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipblas/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "fec91d5fe42b9fef3e0d8088e769c113f8dd6eda614b6bc5a646feacb16c88a4",
+    "bytes": 3479,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "hipblas-common-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipblas-common/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "hipblaslt-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipblaslt/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "hipfft-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipfft/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "dc73cef4d65dbb7ef98c9dc1af26edd3528d5d2f6dca59f78d6b5cb6940204bc",
+    "bytes": 2799,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "hiprand-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hiprand/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "hipsolver-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipsolver/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "67db69484a5bb6ec5a2d6e7738f036eb76d2d611fde7b763bab4ff1edfcd5e13",
+    "bytes": 1090,
+    "matches_companion_sdk_license": false,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "hipsparse-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/hipsparse/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "rocblas-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocblas/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b57f384b03b348ca6dc3694dafa3ed7e69003a910fcd9e402eca514f4d86af83",
+    "bytes": 9200,
+    "matches_companion_sdk_license": false,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "rocfft-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocfft/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "bff8e2d1d03f313c95f39be2aa1fbdb545baa170bd07b077172539f1114afd0b",
+    "bytes": 2800,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "rocrand-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocrand/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "rocsolver-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocsolver/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "a037bdde286c83bb33b905fbabe2aa4187553b7abe41ae281aa1b2dab89ef95a",
+    "bytes": 5128,
+    "matches_companion_sdk_license": false,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "rocsparse-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-libraries/rocm-7.1.1/projects/rocsparse/LICENSE.md",
+    "source_ref": "rocm-7.1.1",
+    "sha256": "b185aaa652b0bf066c37a0d6314ce4bf4521e4a3c9bf46edd2f6a777ac522223",
+    "bytes": 1080,
+    "matches_companion_sdk_license": true,
+    "scope": "Official source project license; exact binary dependency audit remains separate."
+  },
+  {
+    "file": "OpenBLAS-0.3.30-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/OpenMathLib/OpenBLAS/v0.3.30/LICENSE",
+    "source_ref": "v0.3.30",
+    "bytes": 1548,
+    "sha256": "190b5a9c8d9723fe958ad33916bd7346d96fab3c5ea90832bb02d854f620fcff",
+    "scope": "Installed rocm-openblas.dll identifies OpenBLAS 0.3.30 NO_AFFINITY generic; this is matching upstream-base text, not proof of exact AMD fork source commit."
+  },
+  {
+    "file": "OpenBLAS-lapack-netlib-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/OpenMathLib/OpenBLAS/v0.3.30/lapack-netlib/LICENSE",
+    "source_ref": "v0.3.30",
+    "bytes": 2266,
+    "sha256": "978539245c405775bf347b1256c36df4daf8b69a64b099e94b1d53742201621e",
+    "scope": "Installed rocm-openblas.dll identifies OpenBLAS 0.3.30 NO_AFFINITY generic; this is matching upstream-base text, not proof of exact AMD fork source commit."
+  }
+]

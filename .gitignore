@@ -1,0 +1,65 @@
+# Local model packages and private data
+/weights/
+/data/
+/outputs/
+/checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.pproj
+*.sqlite
+*.sqlite3
+*.db
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+# Distribution attachments belong on GitHub Releases, not in source history.
+/distribution/*.exe
+/distribution/*.zip
+# Reproducible dependency manifests remain tracked; local build products do not.
+**/target/
+**/.build/
+**/.venv/
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+**/.idea/
+**/.vs/
+**/.vscode/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/installer/output/
+**/installer/staging/
+**/installer/tools/
+
+# Tiny upstream parser fixtures are source tests, not distributed model weights.
+!app/vendor/candle-core/tests/**/*.pt
+!app/vendor/candle-core/tests/**/*.pth
+/work/
+
+# Preserve protection for data and caches used by the original POP 1 entry points.
+checkpoints*/
+High_reso_dataset/
+dataset_cache*/
+visualizations/
+runs/
+logs/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+venv/
+env/
+hf_release/
+private_model_archives/
+
+# --- Bezier fork: local toolchain / vendored crates / build products ---
+/.pydeps/
+/data_tools/image_to_sequence/vendor/
+/data_tools/image_to_sequence/.cargo/config.toml
+/work/

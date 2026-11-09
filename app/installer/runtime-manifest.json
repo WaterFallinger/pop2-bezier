@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "cuda_release": "13.1.1",
+  "source": "https://developer.download.nvidia.com/compute/cuda/redist/redistrib_13.1.1.json",
+  "packages": [
+    {
+      "id": "libcublas",
+      "version": "13.2.1.1",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libcublas/windows-x86_64/libcublas-windows-x86_64-13.2.1.1-archive.zip",
+      "sha256": "b00be5cda504da494a5f6b72a24f53254f97d4d47e8933ecc3993ad58b6b2ad2",
+      "size": 384768814,
+      "files": [
+        {
+          "name": "cublas64_13.dll",
+          "version": [
+            6,
+            14,
+            11,
+            1321
+          ],
+          "sha256": "3a9a8abd59316ef56bec6c01422639466a213443144fa25e1a9862c1b40a7584",
+          "size": 51572336
+        },
+        {
+          "name": "cublasLt64_13.dll",
+          "version": [
+            6,
+            14,
+            11,
+            1321
+          ],
+          "sha256": "181e99b9c839cd665afdcc9181959957d68d559b34b89f05b385a2a613b80337",
+          "size": 449244272
+        }
+      ]
+    },
+    {
+      "id": "libcurand",
+      "version": "10.4.1.81",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libcurand/windows-x86_64/libcurand-windows-x86_64-10.4.1.81-archive.zip",
+      "sha256": "9e9e46f7506415127f4014e00eced19998762bd4938603d9cb154ce23c86f838",
+      "size": 54992852,
+      "files": [
+        {
+          "name": "curand64_10.dll",
+          "version": [
+            6,
+            14,
+            11,
+            1041
+          ],
+          "sha256": "09d02f127aa786a8a5a70ed270e0202e63e06ef5cb1fcb468f19405d173e9afd",
+          "size": 59126384
+        }
+      ]
+    },
+    {
+      "id": "cuda_nvrtc",
+      "version": "13.1.115",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_nvrtc/windows-x86_64/cuda_nvrtc-windows-x86_64-13.1.115-archive.zip",
+      "sha256": "4ddd5a1e34fd62bb41e78c0725edfbf5609f4ecedd7fe118eddf2148b097fc91",
+      "size": 284695391,
+      "files": [
+        {
+          "name": "nvrtc64_130_0.dll",
+          "version": [
+            6,
+            14,
+            11,
+            9000
+          ],
+          "sha256": "3e2371db636d41af6ae4bfe73cd315b8415190b6129ce6d3416909e22802b4e7",
+          "size": 95446640
+        },
+        {
+          "name": "nvrtc-builtins64_131.dll",
+          "version": null,
+          "sha256": "7869f703c1b22c41b21d9865105ea973b7d2c144c0c79364d3eb2ec051d4d8bc",
+          "size": 4475504
+        }
+      ]
+    }
+  ]
+}

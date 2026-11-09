@@ -1,0 +1,24 @@
+{
+  "upstream_component": "POP2 v3.3 training image-to-sequence generator",
+  "source_variant": "packed large_csv_v1",
+  "drawing_core_preserved": [
+    "src/engine.rs",
+    "src/shader.wgsl",
+    "src/types.rs",
+    "src/v3.rs",
+    "src/scheduling.rs",
+    "src/gpu_tests.rs"
+  ],
+  "release_changes": [
+    "Explicit CLI and required input/output folders; no developer-specific default paths",
+    "Safe execution defaults: 16 images, 1 version, 1 GPU, batch16/dispatch16/inflight1",
+    "Independent CPU replay tool for current marker types"
+  ],
+  "training_protocol": "geometrize_512_three_stage_interrupt_v1",
+  "canvas": 512,
+  "global_shapes": 85,
+  "coarse_per_cell": 20,
+  "fine_per_cell": 10,
+  "max_csv_records_including_background": 896,
+  "regional_rmse": 12.75
+}

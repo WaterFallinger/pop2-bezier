@@ -1,0 +1,36 @@
+{
+  "model_repository": "doubixz/primitive-operation-painter-2-1b",
+  "model_revision": "ca575269a461c90ecf630dcf70c4beaaf319b3a1",
+  "epoch": 60,
+  "global_step": 10020,
+  "weight_dtype": "bfloat16",
+  "prompt": "金发蓝眼的白皙圆脸女性以明亮动画风呈现，张嘴露舌，粉色背景可见，取景包含头部和肩颈。",
+  "shown_variants": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "experiment_candidates": 32,
+  "selection_policy": "First eight consecutive candidates, not a ranking.",
+  "cfg_space": "logits",
+  "cfg_scale": 1,
+  "renyi_alpha": 4,
+  "within_support_sampling": "uniform",
+  "initial_seed_base": 2026102000,
+  "continuation_seed_base": 2027102000,
+  "raw_image_conditioning": false,
+  "ground_truth_geometry_used": false,
+  "conditioning": "Chinese text + drawing BOS only",
+  "native_image_size": [
+    512,
+    512
+  ],
+  "context": "Rolling region context; underlying model window remains 1024.",
+  "implementation_note": "Historical rolling-region inference experiment with the published model. Not a rerun of the 0.9.29 App binary or the single-window public Python CLI.",
+  "presentation": "Original PNGs tiled at native size with 12-pixel white gaps; no retouching, cropping, resampling, or image refinement."
+}

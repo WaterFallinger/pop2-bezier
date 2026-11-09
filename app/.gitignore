@@ -1,0 +1,32 @@
+/target*/
+/.build/
+/installer/staging/
+/installer/output/
+/models/
+*.pproj
+*.pidx
+*.part
+*.log
+*.pdb
+*.obj
+*.lib
+*.exp
+*.dll
+*.exe
+__pycache__/
+.vs/
+.vscode/
+.idea/
+.env
+# The small tokenizer and prompt templates under assets/ are required source assets.
+
+/artifacts/
+
+# Upstream tiny serialization fixtures are not released model weights.
+!vendor/candle-core/tests/*.pt
+!vendor/candle-core/tests/*.pth
+!vendor/candle-core/tests/*.npy
+!vendor/candle-core/tests/*.npz
+!assets/caption_spm_1500.model
+!backends/cpu/assets/caption_spm_1500.model
+!native/aten_hip/gui/assets/caption_spm_1500.model

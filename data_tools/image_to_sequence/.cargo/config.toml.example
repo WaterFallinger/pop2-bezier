@@ -1,0 +1,8 @@
+# Template for an offline build.
+# 1) python scripts/vendor_crates.py   (downloads every crate into ../vendor)
+# 2) copy this file to .cargo/config.toml
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
